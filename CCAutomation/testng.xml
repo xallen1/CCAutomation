@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="browser" value="CH"></parameter>
+<parameter name="URL" value="https://qa82-280.cadency.trintech.com/CadencyOAuth/SSO/Logout"></parameter>
+  <test name="Test">
+  <classes>
+	<class name="TestNG.Test_Script">
+	</class>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
