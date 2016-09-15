@@ -18,11 +18,17 @@
 
 #Sample Feature Definition Template
 @tag
-Feature: Test Cadency smoke scenario
+Feature: Test Cadency login scenario
 
 @tag1
 Scenario: Test login with valid credentials
 Given Open Internet Explorer and start application
 When I enter valid username and valid password
 Then user should be able to log in successfully
+
+@tag1
+Scenario: Test navigation after a user has logged in
+Given A user is currently logged in
+When I click on a section header
+Then the user should be navigated to that page
 

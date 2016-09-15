@@ -5,7 +5,7 @@
 <parameter name="URL" value="https://qa82-280.cadency.trintech.com/CadencyOAuth/SSO/Logout"></parameter>
   <test name="Test">
   <classes>
-	<class name="TestNG.Test_Script">
+	<class name="testrunner.RunCukesTest">
 	</class>
   </classes>
   </test> <!-- Test -->
