@@ -17,18 +17,19 @@
 ## (Comments)
 
 #Sample Feature Definition Template
-@tag
-Feature: Test Cadency login scenario
+Feature: Cadency Smoke test for demo
 
-@tag1
-Scenario: Test login with valid credentials
+Scenario: Pull up Certification Aging Details for Reconciling Items
 Given Open Internet Explorer and start application
-When I enter valid username and valid password
-Then user should be able to log in successfully
+When I am on the R2R page
+And I click on Total under Reconciling Items
+Then A pop up breakdown of the total and aging details should appear
 
-@tag1
-Scenario: Test navigation after a user has logged in
-Given A user is currently logged in
-When I click on a section header
-Then the user should be navigated to that page
+Scenario: Pull up Certification Unreconciled Balances
+Given Open Internet Explorer and start application
+When I am on the R2R page
+And I click on Unreconciled Balances amount displayed
+Then A pop up breakdown of the unreconciled balances should appear
+
+
 

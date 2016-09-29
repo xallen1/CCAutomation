@@ -74,115 +74,134 @@ formatter.feature({
       "value": "#Sample Feature Definition Template"
     }
   ],
-  "line": 21,
-  "name": "Test Cadency login scenario",
+  "line": 20,
+  "name": "Cadency Smoke test for demo",
   "description": "",
-  "id": "test-cadency-login-scenario",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "line": 20,
-      "name": "@tag"
-    }
-  ]
+  "id": "cadency-smoke-test-for-demo",
+  "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 24,
-  "name": "Test login with valid credentials",
+  "line": 22,
+  "name": "Pull up Certification Aging Details for Reconciling Items",
   "description": "",
-  "id": "test-cadency-login-scenario;test-login-with-valid-credentials",
+  "id": "cadency-smoke-test-for-demo;pull-up-certification-aging-details-for-reconciling-items",
   "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 23,
-      "name": "@tag1"
-    }
-  ]
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 25,
+  "line": 23,
   "name": "Open Internet Explorer and start application",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 26,
-  "name": "I enter valid username and valid password",
+  "line": 24,
+  "name": "I am on the R2R page",
   "keyword": "When "
 });
 formatter.step({
-  "line": 27,
-  "name": "user should be able to log in successfully",
+  "line": 25,
+  "name": "I click on Total under Reconciling Items",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 26,
+  "name": "A pop up breakdown of the total and aging details should appear",
   "keyword": "Then "
 });
 formatter.match({
   "location": "SmokeTest.open_Internet_Explorer_and_start_application()"
 });
 formatter.result({
-  "duration": 5047345585,
+  "duration": 3577709623,
   "status": "passed"
 });
 formatter.match({
-  "location": "SmokeTest.i_enter_valid_username_and_valid_password()"
+  "arguments": [
+    {
+      "val": "2",
+      "offset": 13
+    }
+  ],
+  "location": "SmokeTest.i_am_on_the_R_R_page(int)"
 });
 formatter.result({
-  "duration": 1154789309,
+  "duration": 8311138589,
   "status": "passed"
 });
 formatter.match({
-  "location": "SmokeTest.user_should_be_able_to_log_in_successfully()"
+  "location": "SmokeTest.i_click_on_Total_under_Reconciling_Items()"
 });
 formatter.result({
-  "duration": 14271614855,
+  "duration": 1614059621,
+  "status": "passed"
+});
+formatter.match({
+  "location": "SmokeTest.a_pop_up_breakdown_of_the_total_and_aging_details_should_appear()"
+});
+formatter.result({
+  "duration": 4994054159,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 30,
-  "name": "Test navigation after a user has logged in",
+  "line": 28,
+  "name": "Pull up Certification Unreconciled Balances",
   "description": "",
-  "id": "test-cadency-login-scenario;test-navigation-after-a-user-has-logged-in",
+  "id": "cadency-smoke-test-for-demo;pull-up-certification-unreconciled-balances",
   "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 29,
-      "name": "@tag1"
-    }
-  ]
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 31,
-  "name": "A user is currently logged in",
+  "line": 29,
+  "name": "Open Internet Explorer and start application",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 32,
-  "name": "I click on a section header",
+  "line": 30,
+  "name": "I am on the R2R page",
   "keyword": "When "
 });
 formatter.step({
-  "line": 33,
-  "name": "the user should be navigated to that page",
+  "line": 31,
+  "name": "I click on Unreconciled Balances amount displayed",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 32,
+  "name": "A pop up breakdown of the unreconciled balances should appear",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "SmokeTest.a_user_is_currently_logged_in()"
+  "location": "SmokeTest.open_Internet_Explorer_and_start_application()"
 });
 formatter.result({
-  "duration": 330728,
-  "error_message": "java.lang.NullPointerException\r\n\tat stepdefinition.SmokeTest.a_user_is_currently_logged_in(SmokeTest.java:49)\r\n\tat ✽.Given A user is currently logged in(CCApplicaton.feature:31)\r\n",
-  "status": "failed"
+  "duration": 2910917032,
+  "status": "passed"
 });
 formatter.match({
-  "location": "SmokeTest.i_click_on_a_section_header()"
+  "arguments": [
+    {
+      "val": "2",
+      "offset": 13
+    }
+  ],
+  "location": "SmokeTest.i_am_on_the_R_R_page(int)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 7019748609,
+  "status": "passed"
 });
 formatter.match({
-  "location": "SmokeTest.the_user_should_be_navigated_to_that_page()"
+  "location": "SmokeTest.i_click_on_Unreconciled_Balances_amount_displayed()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3307973137,
+  "status": "passed"
+});
+formatter.match({
+  "location": "SmokeTest.a_pop_up_breakdown_of_the_unreconciled_balances_should_appear()"
+});
+formatter.result({
+  "duration": 4326179314,
+  "status": "passed"
 });
 });

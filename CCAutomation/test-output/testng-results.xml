@@ -1,69 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="20814" started-at="2016-09-15T19:56:27Z" finished-at="2016-09-15T19:56:47Z">
+  <suite name="Suite" duration-ms="36453" started-at="2016-09-29T18:20:33Z" finished-at="2016-09-29T18:21:09Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.RunCukesTest@5702b3b1]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="20814" started-at="2016-09-15T19:56:27Z" finished-at="2016-09-15T19:56:47Z">
+    <test name="Test" duration-ms="36453" started-at="2016-09-29T18:20:33Z" finished-at="2016-09-29T18:21:09Z">
       <class name="testrunner.RunCukesTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunner.RunCukesTest@5702b3b1]" name="setUpClass" is-config="true" duration-ms="215" started-at="2016-09-15T14:56:27Z" finished-at="2016-09-15T14:56:27Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunner.RunCukesTest@5702b3b1]" name="setUpClass" is-config="true" duration-ms="260" started-at="2016-09-29T13:20:33Z" finished-at="2016-09-29T13:20:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.RunCukesTest@5702b3b1]" name="feature" duration-ms="20504" started-at="2016-09-15T14:56:27Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2016-09-15T14:56:47Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.RunCukesTest@5702b3b1]" name="feature" duration-ms="36102" started-at="2016-09-29T13:20:33Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2016-09-29T13:21:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Test Cadency login scenario]]>
+                <![CDATA[Cadency Smoke test for demo]]>
               </value>
             </param>
           </params>
-          <exception class="cucumber.runtime.CucumberException">
-            <message>
-              <![CDATA[java.lang.NullPointerException]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: java.lang.NullPointerException
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-Caused by: java.lang.NullPointerException
-	at stepdefinition.SmokeTest.a_user_is_currently_logged_in(SmokeTest.java:49)
-	at ✽.Given A user is currently logged in(CCApplicaton.feature:31)
-]]>
-            </full-stacktrace>
-          </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunner.RunCukesTest@5702b3b1]" name="tearDownClass" is-config="true" duration-ms="6" started-at="2016-09-15T14:56:47Z" finished-at="2016-09-15T14:56:47Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunner.RunCukesTest@5702b3b1]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2016-09-29T13:21:09Z" finished-at="2016-09-29T13:21:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
